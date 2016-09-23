@@ -1,0 +1,152 @@
+<div tiddler="MainMenu" modifier="lastUpdated" modified="201507130205" created="200609122139" tags="systemContent"><html>
+<div class="navbar">
+<!--<% if(false) { %>-->
+	<div class="mainDiv">
+		<div class="topItem" >Authoring</div>
+		<div class="dropMenu" >
+			<div class="subMenu" style="display:none;">
+				<div class="subItem"><a href="javascript:;" title="Authoring welcome and contents" onClick="story.displayTiddler(this,'Authoring System',null,config.options.chkAnimate,false)">Welcome</a></div>
+				<div class="subItem"><a href="javascript:;" title="Critical settings before authoring" onClick="story.displayTiddler(this,'Authoring Setup',null,config.options.chkAnimate,false)">Setup</a> (required)</div>
+				<div class="subItem"><a href="javascript:;" title="Overview of the authoring process" onClick="story.displayTiddler(this,'Authoring Roadmap',null,config.options.chkAnimate,false)">Roadmap</a></div>
+				<div class="subItem"><a href="javascript:;" title="Markup for text styles" onClick="story.displayTiddler(this,'Basic Formatting',null,config.options.chkAnimate,false)">Basic Formatting</a></div>
+				<div class="subItem"><a href="javascript:;" title="Practice formatting here" onClick="story.displayTiddler(this,'Sandbox',null,config.options.chkAnimate,false)">Sandbox</a> (practice area)</div>
+				<div class="subItem"><a href="javascript:;" title="Headings, images, lists, links, etc." onClick="story.displayTiddler(this,'Item Level Structure',null,config.options.chkAnimate,false)">Item Level Structure</a></div>
+				<div class="subItem"><a href="javascript:;" title="The many ways tables can be made" onClick="story.displayTiddler(this,'Formatting Tables',null,config.options.chkAnimate,false)">Formatting Tables</a></div>
+				<div class="subItem"><a href="javascript:;" title="Tags classify items by type" onClick="story.displayTiddler(this,'Tag Usage',null,config.options.chkAnimate,false)">Tag Usage</a></div>
+				<div class="subItem"><a href="javascript:;" title="Macros greatly expand the possibilities" onClick="story.displayTiddler(this,'Macros',null,config.options.chkAnimate,false)">Macros</a></div>
+				<div class="subItem"><a href="javascript:;" title="Using jQuery" onClick="story.displayTiddler(this,'Using jQuery',null,config.options.chkAnimate,false)">Using jQuery</a></div>
+				<div class="subItem"><a href="javascript:;" title="Save and restore custom items" onClick="story.displayTiddler(this,'Importing and Exporting Items',null,config.options.chkAnimate,false)">Importing &amp;amp; Exporting</a></div>
+			</div>
+		</div>
+	</div>
+	<div style="text-align:left;margin:0">Users see these:</div>
+<!--<% } %>-->
+	
+	<div class="mainDiv">
+		<div class="topItem">Live Observing</div>
+		<div class="dropMenu" >
+			<div class="subMenu" style="display:none;">
+				<div class="subItem">Single Object Imaging</div>
+				<div class="subSubItem"><a href="javascript:;" title="Acquire a single image" onClick="story.displayTiddler(this,'Acquire a Single Image',null,config.options.chkAnimate,false)">Single Image</a></div>
+				<div class="subSubItem"><a href="javascript:;" title="Acquire multiple images in multiple colors" onClick="story.displayTiddler(this,'Single Object Color Series',null,config.options.chkAnimate,false)">Color Series</a></div>
+				<div class="subItem"><a href="javascript:;" title="Image multiple targets using an observing plan" onClick="story.displayTiddler(this,'Multiple Objects (Plan)',null,config.options.chkAnimate,false)">Multiple Objects (Plan)</a></div>
+				<div class="subItem"><a href="javascript:;" title="Acquire dark and bias frames" onClick="story.displayTiddler(this,'Calibration Frames',null,config.options.chkAnimate,false)">Cal Frames (Dark/Bias)</a></div>
+<!--<% if(screenFlats) { %>-->
+				<div class="subItem"><a href="javascript:;" title="Acquire standard automatic screen flats now" onClick="story.displayTiddler(this,'Standard Flat Fields',null,config.options.chkAnimate,false)">Standard Screen Flats</a></div>
+				<div class="subItem"><a href="javascript:;" title="Setup and do a one-time screen flat run now" onClick="story.displayTiddler(this,'One-Time Flat Field Run',null,config.options.chkAnimate,false)">One-Time Screen Flats</a></div>
+<!--<% } else { %>-->
+				<div class="subItem"><a href="javascript:;" title="Acquire automatic sky flats" onClick="story.displayTiddler(this,'Standard Flat Fields',null,config.options.chkAnimate,false)">Standard Sky Flats</a></div>
+				<div class="subItem"><a href="javascript:;" title="Setup and do a one-time sky flat run" onClick="story.displayTiddler(this,'One-Time Flat Field Run',null,config.options.chkAnimate,false)">One-Time Sky Flats</a></div>
+<!--<% } %>-->
+				<div class="subItem">Special Tasks</div>
+				<div class="subSubItem"><a href="javascript:;" title="Status and control center for the observatory" onClick="story.displayTiddler(this,'System Status',null,config.options.chkAnimate,false)">System Status Disp.</a></div>
+<!--<% if(screenFlats) { %>-->
+				<div class="subSubItem"><a href="javascript:;" title="Set up standard automatic screen flats" onClick="story.displayTiddler(this,'Setup Standard Flat Fields',null,config.options.chkAnimate,false)">Setup Screen Flats</a></div>
+<!--<% } else { %>-->
+				<div class="subSubItem"><a href="javascript:;" title="Set up standard automatic sky flats" onClick="story.displayTiddler(this,'Setup Standard Flat Fields',null,config.options.chkAnimate,false)">Setup Sky Flats</a></div>
+<!--<% } %>-->
+				<div class="subSubItem"><a href="javascript:;" title="Release the observatory" onClick="DC3.Lib.logOff();">Release the Obs.</a></div>
+				<div class="subSubItem"><a href="javascript:;" title="Find objects in our 70,000+ object deep sky catalog" onClick="story.displayTiddler(this,'Deep Sky Catalog Search',null,config.options.chkAnimate,false)">Deep Sky Catalog</a></div>
+				<div class="subSubItem"><a href="javascript:;" title="Pre-compile and check an observing plan" onClick="story.displayTiddler(this,'Check Observing Plan',null,config.options.chkAnimate,false)">Obs. Plan Checker</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="mainDiv">
+		<div class="topItem" >Observatory Info</div>
+		<div class="dropMenu" >
+			<div class="subMenu" style="display:none;">
+				<div class="subItem"><a href="javascript:;" title="Status and control center" onClick="story.displayTiddler(this,'System Status',null,config.options.chkAnimate,false)">System Status Disp.</a></div>
+				<div class="subItem"><a href="javascript:;" title="Detailed specs on our instruments and equipment" onClick="story.displayTiddler(this,'Instruments &amp; Equipment',null,config.options.chkAnimate,false)">Instruments/Equipment</a></div>
+				<div class="subItem"><a href="javascript:;" title="Geographic location and elevation" onClick="story.displayTiddler(this,'Location',null,config.options.chkAnimate,false)">Location</a></div>
+				<div class="subItem"><a href="javascript:;" title="The observatory horizon at BrightSkies" onClick="story.displayTiddler(this,'Observatory Horizon',null,config.options.chkAnimate,false)">Observatory Horizon</a></div>
+				<div class="subItem"><a href="javascript:;" title="Detailed observatory weather conditions and forecast" onClick="story.displayTiddler(this,'BrightSkies Local Weather Report',null,config.options.chkAnimate,false)">Observatory Weather</a></div>
+				<div class="subItem"><a href="javascript:;" title="The observatory website" onClick="story.displayTiddler(this,'BrightSkies Website',null,config.options.chkAnimate,false)">Observatory Website</a></div>
+				<div class="subItem"><a href="javascript:;" title="The observatory webcams at BrightSkies Observatory" onClick="story.displayTiddler(this,'WebcamViewer',null,config.options.chkAnimate,false)">Observatory Webcam</a></div>
+				<div class="subItem"><a href="javascript:;" title="Sunset and Sunrise times at the observatory" onClick="story.displayTiddler(this,'Dawn-Dusk Times',null,config.options.chkAnimate,false)">Sunset &amp; Sunrise</a></div>
+				<div class="subItem"><a href="javascript:;" title="Mid-Atlantic cloud cover (IR)" onClick="story.displayTiddler(this,'Mid-Atlantic Clouds',null,config.options.chkAnimate,false)">Mid-Atlantic Clouds</a></div>
+				<div class="subItem"><a href="javascript:;" title="How to contact the observatory staff" onClick="story.displayTiddler(this,'Contact Info',null,config.options.chkAnimate,false)">Contact Info</a></div>
+				<div class="subItem"><a href="javascript:;" title="Feed your newsreader with observatory events" onClick="story.displayTiddler(this,'RSS Feed',null,config.options.chkAnimate,false)"><img src="/im/feed-icon-14x14.png" border="0" width="14" height="14" align="absmiddle">&amp;nbsp;RSS Events Feed</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="mainDiv">
+		<div class="topItem" >Toolbox</div>
+		<div class="dropMenu" >
+			<div class="subMenu" style="display:none;">
+				<div class="subItem"><a href="javascript:;" title="Various observatory tasks and tests" onClick="story.displayTiddler(this,'Utility Tasks',null,config.options.chkAnimate,false)">Utility Tasks</a></div>
+				<div class="subItem"><a href="javascript:;" title="Display a view of various star catalogs" onClick="story.displayTiddler(this,'Catalog View',null,config.options.chkAnimate,false)">View Catalog Stars</a></div>
+				<div class="subItem"><a href="javascript:;" title="Shows where the telescope is pointing, if connected" onClick="story.displayTiddler(this,'Telescope Aimpoint',null,config.options.chkAnimate,false)">Telescope Aimpoint</a></div>
+				<div class="subItem"><a href="javascript:;" title="Generate an AAVSO chart" onClick="story.displayTiddler(this,'AAVSO Chart',null,config.options.chkAnimate,false)">AAVSO Chart</a></div>
+				<div class="subItem"><a href="javascript:;" title="Moving images to/from server 'my-images' folder" onClick="story.displayTiddler(this,'Transfer Folder',null,config.options.chkAnimate,false)">Transfer Folder</a></div>
+<!--<% if(User.IsAdministrator) { %>-->
+				<div class="subItem"><a href="author.html" title="Make changes to web content">Authoring System</a></div>
+<!--<% } %>-->
+			</div>
+		</div>
+	</div>
+
+<!--<% if(User.Username != "localweb") { %>-->
+<!--<% } %>-->
+
+	<div class="mainDiv">
+		<div class="topItem" >My Documents</div>
+		<div class="dropMenu" >
+			<div class="subMenu" style="display:none;">
+				<div class="subItem"><a href="javascript:;" title="Your acquired images" onClick="story.displayTiddler(this,'Acquired Images',null,config.options.chkAnimate,false)">Acquired Images</a></div>
+				<div class="subItem"><a href="javascript:;" title="Your observing plans" onClick="story.displayTiddler(this,'Observing Plans',null,config.options.chkAnimate,false)">Observing Plans</a></div>
+				<div class="subItem"><a href="javascript:;" title="Your run logs" onClick="story.displayTiddler(this,'Run Logs',null,config.options.chkAnimate,false)">Run Logs</a></div>
+<!--<% if(User.IsAdministrator) { %>-->
+				<div class="subItem"><a href="javascript:;" title="Your ACP file hierarchy" onClick="story.displayTiddler(this,'ACP-Obs-Control (files)',null,config.options.chkAnimate,false)">ACP folder tree</a></div>
+<!--<% } %>-->
+			</div>
+		</div>
+	</div>
+	
+<!--<% if(schInst) { %>-->
+	<div class="mainDiv">
+		<div class="topItem" >Scheduled</div>
+		<div class="dropMenu" >
+			<div class="subMenu" style="display:none;">
+				<div class="subItem"><a href="/sc/index.asp" target="_blank" title="Show the Scheduler\s's Database of requests">Schedule Browser</a></div>
+				<div class="subItem"><a href="javascript:;" title="Request color data for astro-imaging" onClick="story.displayTiddler(this,'Schedule Astro-Imaging',null,config.options.chkAnimate,false)">Astro-Imaging</a></div>
+				<div class="subItem"><a href="javascript:;" title="Request a single series of images" onClick="story.displayTiddler(this,'Schedule Image Series',null,config.options.chkAnimate,false)">Single Series</a></div>
+				<div class="subItem"><a href="javascript:;" title="Enter requests from RTML" onClick="story.displayTiddler(this,'Submit RTML Request',null,config.options.chkAnimate,false)">Upload RTML</a></div>
+			</div>
+		</div>
+	</div>
+<!--<% } %>-->
+
+	<div class="mainDiv">
+		<div class="topItem" >Shared Files</div>
+		<div class="dropMenu" >
+			<div class="subMenu" style="display:none;">
+				<!--<% if(User.CanUpload) { %>-->
+				<div class="subItem"><a href="javascript:;" title="Upload and share files with other observers" onClick="story.displayTiddler(this,'Shared File Area',null,config.options.chkAnimate,false)">Shared File Area</a></div>
+				<!--<% } else { %>-->
+				<div class="subItem"><a href="javascript:;" title="Files shared by other observers" onClick="story.displayTiddler(this,'Shared File Area',null,config.options.chkAnimate,false)">Shared File Area</a></div>
+				<!--<% } %>-->
+				<div class="subItem"><a href="javascript:;" title="Downloads provided by the staff" onClick="story.displayTiddler(this,'Downloads',null,config.options.chkAnimate,false)">Downloads</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="mainDiv">
+		<div class="topItem" >Help Resources</div>
+		<div class="dropMenu" >
+			<div class="subMenu" style="display:none;">
+				<div class="subItem"><a href="javascript:;" onClick="story.displayTiddler(this,'Welcome',null,config.options.chkAnimate,false)">Welcome</a></div>
+				<div class="subItem"><a href="javascript:;" onClick="story.displayTiddler(this,'Using This Web Site',null,config.options.chkAnimate,false)">Using This Web Site</a></div>
+				<div class="subItem"><a href="javascript:;" onClick="story.displayTiddler(this,'Getting Started',null,config.options.chkAnimate,false)">Getting Started</a></div>
+				<div class="subItem"><a href="javascript:;" onClick="story.displayTiddler(this,'Common Questions',null,config.options.chkAnimate,false)">Common Questions</a></div>
+				<div class="subItem"><a href="javascript:;" onClick="story.displayTiddler(this,'Making Observing Plans',null,config.options.chkAnimate,false)">Making Obs. Plans</a></div>
+				<div class="subItem"><a href="javascript:;" onClick="story.displayTiddler(this,'Using FTP',null,config.options.chkAnimate,false)">Using FTP</a></div>
+				<div class="subItem"><a href="javascript:;" onClick="story.displayTiddler(this,'ACP Reference Guide',null,config.options.chkAnimate,false)">ACP Ref Guide</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</html>
+<<XPMenu>>
+</div>

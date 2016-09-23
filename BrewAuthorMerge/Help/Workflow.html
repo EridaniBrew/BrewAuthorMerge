@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Workflow</title>
+    <link rel=StyleSheet href="design.css" type="text/css" media=screen>
+</head>
+<body>
+    <h1>Workflow</h1>
+    <img src="images/Workflow.png" style="float:left; padding-right: 20px; padding-left: 10px" width="195" height="146" />
+    This section describes my expected steps to perform the merge of a backup author file (containing my modifications) with a freshly installed 
+    ACP author.html.
+    <p/>
+    You may well come up with a different process, this is just my concept.
+    <ul >
+        <li><h2>Back Up Files</h2>
+            <img src="images/JoeBtfsplk.png" style="float:right; padding-right: 10px; padding-left: 20px" />
+        Back up / rename the following files:<p/>
+            <ul>
+                <li><b>author.html</b>. The ACP file. This is typically located at DocRoot, something like <em>C:\Users\Public\Documents\ACP Web Data\Doc Root</em>. I name mine 
+            authorOrig.html; it is the original author file from ACP.</li>
+                <li><b>index.asp</b>. This is also located at DocRoot. Copy index.asp to indexOrig.asp. Don't delete the index.asp file; it will be replaced later.</li>
+                <li><b>backup author.html</b>. The Customized file. This is typically located at <em>DocRoot/author-backup</em> with a name like author.bk-20160517_190644.html,
+            based on the date the file was saved by ACP. <p/>
+            OK, you shouldn't really need to back this one up since we will not be modifying it. I am the reincarnation of Joe Btfsplk, so I have to be extra careful.</li>
+            </ul>
+        </li>
+        <li><h2>Run BAM</h2>
+        Run the BAM tool, and follow these steps. <p/>
+        <ol type="1">
+            <li>Click the "Customized File ..." button. Use the file dialog to select the Customized file. This is your backed up author file 
+            (like author.bk-20160517_190644.html) containing your modifications. After selection, you should see the file name in the text below the button.<p /></li>
+            <li>Similarly, use the "New (ACP) ..." button to select your authorOrig.html file.<p /></li>
+            <li>Click the "Go" button to perform the merge. The merged tiddlers will be filled in. <p /></li>
+            <li><em>Optionally</em>, click on the various tiddlers to check what has happened. Click the Main Menu tiddler to review changes in the menu.<p /></li>
+            <li>Use File/Save Updated File to save your new author file. Save it back into DocRoot for the next step.<p /></li>
+        </ol>
+        </li>
+
+        <li>
+            <h2>Run ACP in Authoring Mode</h2>
+            Use Chrome (or whatever you use for authoring) to bring up the ACP web page. It will show the unchanged ACP menus; none of
+            your changes are implemented yet. <p/>
+
+            Go into Authoring mode. Now you should see the merged menu and tiddler modifications. Check that the menus look OK, maybe check a few tiddlers.<p/>
+
+            Click the Save to Web button at the upper right. This will use your merged author file to create a replacement index.asp (you did back up the original, right?).<p/>
+
+            Go back into the normal ACP web page. You should now see your modifications in all their glory.
+        </li>
+</ul>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿
+Documentation
+   Change OLD to Customized - documentation
+   Retake screen shots
+   explain colors
+
+Menu Compare - generate red Warn when ACP & custom entry exist and the text is different.
+remove vbtab, trim for the compare. Use Custom

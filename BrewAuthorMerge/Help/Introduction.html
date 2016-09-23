@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Introduction</title>
+    <link rel=StyleSheet href="design.css" type="text/css" media=screen>
+</head>
+<body>
+    <h1>Introduction</h1>
+    <h2>ACP Web Page Customization Process</h2>
+    <div>
+    <img src="images/yellow-merge.png" style="float:left; padding-right: 10px; padding-left: 10px" width="128" height="128" />
+    ACP provides a very nifty web page interface to allow users to run plans and do various tasks within ACP. 
+    This web page is coded in the file <em>Doc Root/author.html</em>. The ACP Authoring environment allows
+    users to modify this file, adding capabilities in the form of modified or new tiddlers. 
+    You can also rearrange the existing menu entries, or add new menu entries for your new tiddlers. This is a very powerful
+    capability.
+    <p/>
+    However: Each time ACP is updated to the next release, the author.html file update is a bit of a pain.<p/>
+    
+    As part of the ACP update process the current author.html file (containing hours of your elegant customizations) 
+    is copied to a backup name (something like <em>Doc Root/author-backups/author.bk-20150923_170957.html.</em>). 
+    I will refer to this file as the <b>Customized file</b>, since it contains your valuable customization changes.
+    The updater then installs a brand new clean author.html file with whatever 
+    cool updates have been made by Bob. I will refer to this file as the <b>ACP file</b>. 
+        <img src="images/DiffMerge.png" style="float:right; padding-right: 10px; padding-left: 10px" width="364" height="241" />  <!--- orig 485,321 -->
+
+    <p/>You now have the task of re-applying your changes from the Customization file into the new author.html.<p/>
+
+    <p/>
+    ACP provides a couple of tools for extracting modified tiddlers from your author.html file and applying them to the new 
+    file. However, a) 
+    they only apply to the tiddlers, and b) they need to be run from a command shell or a batch file. 
+    I have not had much success using these tools.
+    <p/>
+    <p />
+    The update process used by some ACP users involves using a diff tool (I now use DiffMerge as shown here). The process entails two updates, 
+    one for the tiddler definitions and 
+    one for the Main Menu structure. It works, but I tend to mess things up every so often. In addition, it involves a separate manual 
+    backup of the Main Menu structure from within the authoring tool.
+    <p /></div>
+    <h2>Enter BAM</h2>   
+    So, I took a shot at a tool to do the merging for me. BAM (short for BrewAuthorMerge) is probably simplistic; it is hard to determine in all cases whether
+    a piece of the old file should migrate to the new version. For my observatory, my changes to author.html are pretty straightforward; I add or modify a few tiddlers,
+    and add a couple of menu items. I expect that other ACP users may have significantly more complex changes. 
+    Check the <a href="Features.html">Features/Caveats</a> page for specifics.
+    <p/>
+    I hope people will give BAM a try, if for no other reason than to help me find issues or things that can be added
+    (the typical Microsoft Beta Test). If you find issues with the tool, please drop me an email. 
+    Include a screenshot of the problem, and a copy of the two html files you were using so I can debug the issue.<p />
+
+    In fact, I am interested in collecting customized author.html files in general. If you are willing, please email me a copy of your modified author.html 
+    file so I can add it to my test bank.
+    <p/>
+    <p/>
+    Robert Brewington<br />
+    eridanibrew@gmail.com
+
+</body>
+</html>

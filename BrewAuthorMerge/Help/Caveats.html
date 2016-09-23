@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Caveats</title>
+    <link rel=StyleSheet href="design.css" type="text/css" media=screen>
+</head>
+<body>
+    <h1>Caveats</h1>
+    <img src="images/AngelDevil.gif" style="float:left; padding-right: 10px; padding-left: 10px" />
+    <h2>Code Changes</h2>
+    No attempt is made to merge changes to the large code section in front of the tiddlers, or the code section after the tiddlers. I assume people are not writing their 
+    own sections of code? If so, send me a copy of what you do and I can look at doing this merge. Modifying this code seems like a dangerous activity,
+    but there could be people doing it. Perhaps there are simple aadjustments to be made.
+    
+    <h2>Deleted ACP Tiddlers</h2>
+
+    If a tiddler is part of (for example) ACP 12.1, and the 12.2 release has removed this tiddler, the 12.1 tiddler will be merged back in.
+    <p/>
+    Similarly, if an ACP menu item is removed from the updated system the merge operation will put it back in. It can't tell the difference between
+    a Customized entry and outdated ACP menu entry.
+
+
+    <h2>Backing Up before Merging</h2>
+    <img src="images/Acc15.gif" style="float:left; padding-right: 10px; padding-left: 10px" />
+    As described in <a href="Workflow.html">Workflow</a> you really need to back up the newly installed author.html and index.asp files before you start 
+    messing with them using BAM (or any other tool).
+    There is a "small chance" that BAM may create a problem which is difficult to recover from. 
+
+    <h2>Not an Editor</h2>
+    BAM does not provide any editing capability of the tiddlers or the menu structure. It is intended only to merge the files. 
+    Subsequent editing can be done in the ACP editing system as usual, or in some other editor as desired.
+
+</body>
+</html>

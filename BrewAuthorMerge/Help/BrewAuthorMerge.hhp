@@ -1,0 +1,21 @@
+[OPTIONS]
+Auto Index=Yes
+Auto TOC=9
+Compatibility=1.1 or later
+Compiled file=BrewAuthorMerge.chm
+Contents file=toc.hhc
+Default topic=Introduction.html
+Display compile progress=No
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=BrewAuthorMerge
+
+
+[FILES]
+Introduction.html
+Features.html
+Workflow.html
+Caveats.html
+
+[INFOTYPES]
+
